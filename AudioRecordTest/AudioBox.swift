@@ -43,7 +43,7 @@ class AudioBox: NSObject, ObservableObject {
   }
   
   func record(forDuration duration: TimeInterval) {
-    audioRecorder?.record()
+    audioRecorder?.record(forDuration: duration)
     status = .recording
   }
   
